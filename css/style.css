@@ -1,0 +1,96 @@
+body .page-header {
+  background: url("/images/header.png");
+  margin-top: 0;
+  border-bottom: 2px solid #004466;
+}
+body .page-header .navbar.navbar-default {
+  margin: 0;
+  background: white;
+  border-radius: 0;
+  border-top: 0 none;
+  box-shadow: 0 0 6px #333;
+}
+body .page-header .content {
+  width: 900px;
+  margin: auto;
+  background: url("/images/logo.png") center left no-repeat;
+}
+body .page-header .content h1 {
+  font-weight: bold;
+  margin-left: 200px;
+  padding: 30px;
+  text-align: left;
+  color: white;
+  font-size: 60px;
+  line-height: 60px;
+}
+body .page-header .content h1 small {
+  color: #eee;
+  font-size: 42px;
+}
+body .page-header .content h1 .tiny {
+  color: #eee;
+  font-size: 22px;
+}
+body .page-header .content h1 img {
+  margin: 20px;
+}
+body .container {
+  max-width: 960px;
+}
+body .container.amber-main {
+  margin-bottom: 50px;
+}
+body .container h2 {
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
+body .container h3,
+body .container h4 {
+  font-weight: bold;
+  margin: 20px 0;
+}
+body .container h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #999;
+}
+body .container p.note {
+  background: #FFFFDD;
+  padding: 5px 10px;
+  border: 1px solid #BBBB7A;
+}
+body .container .nav.amber-nav {
+  background: #eee;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+body .container .nav.amber-nav a {
+  padding: 5px 20px;
+  color: #444;
+  border-right: 1px solid transparent;
+}
+body .container .nav.amber-nav a:hover {
+  background: #ddd;
+}
+body .container .nav.amber-nav a.active {
+  border-right: 1px solid #004466;
+  font-weight: bold;
+  color: #004466;
+}
+body .container .nav.amber-nav .nav a {
+  padding-left: 40px;
+}
+body .container .next-section {
+  margin-top: 20px;
+  text-align: right;
+}
+body #footer {
+  text-align: center;
+}
+body #footer .container {
+  border-top: 1px solid #ccc;
+}

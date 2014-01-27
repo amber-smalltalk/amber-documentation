@@ -1,0 +1,30 @@
+<ul class="nav amber-nav">
+	{% assign sorted_pages = site.pages | sort:"name" %}
+	{% for node in sorted_pages %}
+		{% unless node.parent or node.hide %}
+
+			{% if page.url == node.url %}
+				<li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+			{% else %}
+				<li><a href="{{node.url}}">{{node.title}}</a></li>
+			{% endif %}
+
+			<ul class="nav">
+			{% for subnode in sorted_pages %}
+					{% if subnode.parent == node.title %}
+
+						{% if page.url == subnode.url %}
+							<li class="active"><a href="{{subnode.url}}" class="active">{{subnode.title}}</a></li>
+						{% else %}
+							<li><a href="{{subnode.url}}">{{subnode.title}}</a></li>
+						{% endif %}
+			
+
+					{% endif %}
+				{% endfor %}
+			</ul>
+
+
+		{% endunless %}
+	{% endfor %}
+</ul>
