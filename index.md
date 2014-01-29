@@ -5,6 +5,11 @@ hide: true
 next: getting-started.html
 ---
 
+<p class="warning">
+This documentation is a work in progress. 
+</p>
+
+
 Welcome to the Amber documentation website!
 
 The purpose of this documentation is to guide you step by step from

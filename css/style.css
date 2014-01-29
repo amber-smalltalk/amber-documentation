@@ -62,6 +62,11 @@ body .container p.note {
   padding: 5px 10px;
   border: 1px solid #BBBB7A;
 }
+body .container p.warning {
+  background: #ffDDDD;
+  padding: 5px 10px;
+  border: 1px solid #bb9999;
+}
 body .container .nav.amber-nav {
   background: #eee;
   border-radius: 10px;
