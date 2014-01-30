@@ -48,7 +48,7 @@ Ubuntu provides nodejs as well as npm in its repository.
 sudo apt-get install nodejs npm
 ```
 
-#### Installing `amber`
+#### Installing the node amber package
 
 Once nodejs and npm are installed, evaluate:
 
@@ -64,6 +64,9 @@ sudo npm install -g amber
 
 
 ### The bower component
+
+The npm package doesn't provide the JavaScript files required to load
+Amber in a page. This is instead provided by the bower package.
 
 [Bower](http://bower.io) is a package manager for the web. It makes it
 easy to manage dependencies in your application including
