@@ -1,43 +1,9 @@
 ---
-title: Setting up the project
+title: Loading Amber
 layout: default
-permalink: "setting-up-project.html"
-parent: Getting started
+permalink: "loading-amber.html"
+parent: Overview
 ---
-
-Now that the command-line tool `amber` is installed, the project can
-be setup using bower.
-
-### Bower
-
-Bower is a package manager for the web. Amber can be install either by
-running in the root directory of the new project:
-
-```sh
-bower install amber --save
-```
-
-or by adding in the root of the project a `bower.json` file like the
- following:
-
-```json
-{
-    "name": "amber-todolist",
-    "dependencies": {
-        "amber": "~0.12.3"
-    }
-}
-```
-
-and evaluating
-```sh
-bower install
-```
-
-In both cases, Amber will be installed in a directory named `bower_components`.
-
-### Loading Amber
-
 
 In this section we will learn how setup an `index.html` page to load
 amber using [requirejs](http://requirejs.org).
@@ -51,10 +17,9 @@ dependencies to be loaded asynchronously.
 Amber ships with [requirejs](http://requirejs.org), the most popular
 AMD loader implementation.
 
-In the `index.html` page, both `requirejs` and `amber.js` are loaded
-as any JavaScript file:
+Create an `index.html` file with the following contents:
 
-```html
+{% highlight html %}
 <!DOCTYPE html>
 <html>
 	<head>
@@ -70,7 +35,7 @@ as any JavaScript file:
 	<body>
 	</body>
 </html> 
-```
+{% endhighlight %}
 
 In the next script we define how Amber packages are loaded. Amber
 comes with several AMD modules, the default one being `amber/devel`.
