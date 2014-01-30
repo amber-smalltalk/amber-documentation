@@ -13,9 +13,9 @@ process and setup.
 Amber is shipped both as
 
 - a [npm module](https://npmjs.org/package/amber) for its command-line
-  interface tool `amber` with a small server, compiler and REPL;
-- a [bower](http://bower.io) component used as dependency for other
-  projects.
+  interface tools `amber` and `amberc` providing a small server, a compiler and a REPL;
+- a [bower](http://bower.io) component used as dependency for projects
+  running in the browser.
 
 We will see in the [next section](overview/installing.html) how
 to install both components.
@@ -23,11 +23,11 @@ to install both components.
 ### How Amber manages files
 
 Amber compiles to JavaScript. It saves each package file as
-a [requirejs](http://requirejs.org) JavaScript module containing the
-compiled JavaScript code of the package.
+a JavaScript [asynchronous module definition](https://github.com/amdjs/amdjs-api/wiki/AMD)
+containing the compiled JavaScript code of the package.
 
-Amber also saves -- for convenience -- the Smalltalk source code of
-each package in a separate `.st` file.
+For convenience, Amber also saves the Smalltalk source code
+of each package in a separate `.st` file.
 
 In the next sections we will learn how to install Amber, load and save
-packages disk and fire up the development environment.
+packages from/to disk and fire up the development environment.

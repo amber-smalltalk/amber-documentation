@@ -25,11 +25,11 @@ Create an `index.html` file with the following contents:
 	<head>
 	    <script
 		  type='text/javascript'
-		  src='./bower_components/amber/support/requirejs/require.min.js'>
+		  src='bower_components/amber/support/requirejs/require.min.js'>
 	    </script>
 	    <script
 		  type='text/javascript'
-		  src='./bower_components/amber/support/amber.js'>
+		  src='bower_components/amber/support/amber.js'>
 	    </script>
 	</head>
 	<body>
@@ -38,7 +38,9 @@ Create an `index.html` file with the following contents:
 {% endhighlight %}
 
 In the next script we define how Amber packages are loaded. Amber
-comes with several AMD modules, the default one being `amber/devel`.
+comes with several AMD modules to load Amber; the default one --
+the one with support for application development and in-browser IDE --
+being `amber/devel`.
 
 ```html
 <!DOCTYPE html>
@@ -46,11 +48,11 @@ comes with several AMD modules, the default one being `amber/devel`.
 	<head>
 	    <script
 		  type='text/javascript'
-		  src='./bower_components/amber/support/requirejs/require.min.js'>
+		  src='bower_components/amber/support/requirejs/require.min.js'>
 	    </script>
 	    <script
 		  type='text/javascript'
-		  src='./bower_components/amber/support/amber.js'>
+		  src='bower_components/amber/support/amber.js'>
 	    </script>
 	    <script type='text/javascript'>
 		  require(['amber/devel'], function (amber) {
