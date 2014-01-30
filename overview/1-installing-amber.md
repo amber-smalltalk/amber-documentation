@@ -31,10 +31,13 @@ download the installer from the
 
 For MacOS X users, nodejs can also be installed with [homebrew](http://brew.sh/):
 
-
 {% highlight sh %}
 brew install nodejs
 {% endhighlight %}
+
+When installed via homebrew, npm may have problems updating,
+running `npm -gf update` instead of traditional `npm -g update`
+solves [the issue](https://github.com/Homebrew/homebrew/issues/22408#issuecomment-30338806).
 
 #### Installing nodejs on Ubuntu
 
@@ -43,6 +46,11 @@ Ubuntu provides nodejs as well as npm in its repository.
 {% highlight sh %}
 sudo apt-get install nodejs npm
 {% endhighlight %}
+
+#### Installing nodejs on other operating system
+
+See node.js [instructions for installing](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
+node and npm using respective package managers.
 
 #### Installing the node amber package
 
@@ -69,13 +77,17 @@ easy to manage dependencies in your application including
 Amber. Unlike npm, Bower components are meant to be used inside the
 web browser.
 
+If not already present, Bower is installed using npm: `npm install -g bower`,
+on some OSes (Linux, FreeBSD) `sudo npm install -g bower`.
+
+In the root directory of the project,
+Amber bower component can be installed either by
 
 ```sh
 bower install amber --save
 ```
 
-or by adding in the root of the project a `bower.json` file like the
- following:
+or by adding a `bower.json` file like the following:
 
 {% highlight json %}
 {
