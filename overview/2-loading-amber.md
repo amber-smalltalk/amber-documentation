@@ -56,7 +56,7 @@ being `amber/devel`.
 	    </script>
 	    <script type='text/javascript'>
 		  require(['amber/devel'], function (amber) {
-	  		amber.initialize();
+	  		amber.initialize({});
 		  });
 	    </script>
 	</head>
