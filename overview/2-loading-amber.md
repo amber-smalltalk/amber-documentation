@@ -42,7 +42,7 @@ comes with several AMD modules to load Amber; the default one --
 the one with support for application development and in-browser IDE --
 being `amber/devel`.
 
-```html
+{% highlight html %}
 <!DOCTYPE html>
 <html>
 	<head>
@@ -56,14 +56,14 @@ being `amber/devel`.
 	    </script>
 	    <script type='text/javascript'>
 		  require(['amber/devel'], function (amber) {
-	  		amber.initialize({});
+	  		amber.initialize();
 		  });
 	    </script>
 	</head>
 	<body>
 	</body>
 </html> 
-```
+{% endhighlight %}
 
 <p class="warning">
 This page is unfinished.
