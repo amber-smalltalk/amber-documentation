@@ -79,10 +79,14 @@ body .container p.warning {
   margin-left: -6px;
 }
 body .container pre {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   border-radius: 0;
   border: 0 none;
   border-left: 6px solid #ccc;
   margin-left: -6px;
+}
+body .container pre * {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 body .container .nav.amber-nav {
   background: #eee;
