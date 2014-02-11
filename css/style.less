@@ -1,5 +1,9 @@
 body {
 
+	h1, h2, h3, h4, h5, h6, p, div, span {
+		font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	}
+
 	.page-header {
 		background: url("/images/header.png");
 		margin-top: 0;
@@ -37,10 +41,6 @@ body {
 					color: #eee;
 					font-size: 22px;
 				}
-
-				img {
-					margin: 20px;
-				}
 			}
 		}
 	}
@@ -54,7 +54,6 @@ body {
 
 		h2 {
 			font-weight: bold;
-			border-bottom: 1px solid #ccc;
 			padding-bottom: 20px;
 			margin-bottom: 20px;
 			color: #444;
@@ -67,21 +66,33 @@ body {
 
 		h3 {
 			padding-bottom: 10px;
-			border-bottom: 1px solid #999;
+		}
+
+		img {
+			margin: 20px 0;
 		}
 
 		p {
 			&.note {
 				background: #FFFFDD;
-				padding: 5px 10px;
-				border: 1px solid #BBBB7A;
+				padding: 10px;
+				border-left: 6px solid #BBBB7A;
+				margin-left: -6px;
 			}
 
 			&.warning {
 				background: #ffDDDD;
-				padding: 5px 10px;
-				border: 1px solid #bb9999;
+				padding: 10px;
+				border-left: 6px solid #bb9999;
+				margin-left: -6px;
 			}
+		}
+
+		pre {
+			border-radius: 0;
+			border: 0 none;
+			border-left: 6px solid #ccc;
+			margin-left: -6px;
 		}
 
 		.nav {
