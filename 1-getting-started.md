@@ -24,8 +24,8 @@ To get Amber running, you will need [Bower](http://bower.io) and
 sudo npm install -g amber
 
 # Create the project structure
-mkdir myproject
-cd myproject/
+mkdir example-project
+cd example-project/
 
 # The project files will be stored in src/
 mkdir src
@@ -53,7 +53,7 @@ Create an `index.html` file loading Amber:
     <script type='text/javascript'>
       require.config({
         paths: {
-          'myproject': 'src', // mapping for our project files
+          'example-project': 'src', // mapping for our project files
         }
       });
 
@@ -63,7 +63,7 @@ Create an `index.html` file loading Amber:
         // Initialize Amber
         amber.initialize({
           // Configure the default AMD namespace for new packages
-          "transport.defaultAmdNamespace": "myproject"
+          "transport.defaultAmdNamespace": "example-project"
         });
 
         // Start the IDE

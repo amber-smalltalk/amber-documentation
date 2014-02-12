@@ -91,7 +91,7 @@ or by adding a `bower.json` file like the following:
 
 {% highlight json %}
 {
-    "name": "amber-todolist",
+    "name": "example-project",
     "dependencies": {
         "amber": "~0.12.3"
     }
