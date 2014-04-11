@@ -50,7 +50,7 @@ sudo apt-get update
 
 
 {% highlight sh %}
-sudo apt-get install nodejs npm
+sudo apt-get install nodejs
 {% endhighlight %}
 
 #### Installing nodejs on other operating system
@@ -99,7 +99,7 @@ or by adding a `bower.json` file like the following:
 {
     "name": "example-project",
     "dependencies": {
-        "amber": "~0.12.3"
+        "amber": "~0.12.4"
     }
 }
 {% endhighlight %}
