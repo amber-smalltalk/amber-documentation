@@ -3,6 +3,7 @@ title: Loading Amber
 layout: default
 permalink: "loading-amber.html"
 parent: Overview
+next: "/overview/loading-packages.html"
 ---
 
 In this section we will learn how setup an `index.html` page to load
@@ -70,10 +71,6 @@ being `amber/devel`.
 
 The last modification we make to the `index.html` page is to add a line after Amber's initialization to automatically popup Helios, its integrated development environment.
 
-<p class="warning">
-Most web browser will block popups by default. You may need to authorize the Helios popup.
-</p>
-
 Here is our final version of `index.html`.
 
 
@@ -92,6 +89,8 @@ Here is our final version of `index.html`.
         <script type='text/javascript'>
           require(['amber/devel'], function (amber) {
             amber.initialize();
+
+            // Popup Helios
             amber.popupHelios();
           });
         </script>
@@ -102,5 +101,5 @@ Here is our final version of `index.html`.
 {% endhighlight %}
 
 <p class="warning">
-This page is unfinished.
+Most web browser will block popups by default. You may need to authorize the Helios popup.
 </p>
