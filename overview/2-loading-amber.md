@@ -7,7 +7,7 @@ next: "/overview/loading-packages.html"
 ---
 
 In this section we will learn how setup an `index.html` page to load
-amber using [requirejs](http://requirejs.org).
+nnamber using [requirejs](http://requirejs.org).
 
 #### Amber packages
 
@@ -100,6 +100,18 @@ Here is our final version of `index.html`.
 </html> 
 {% endhighlight %}
 
+
 <p class="warning">
 Most web browser will block popups by default. You may need to authorize the Helios popup.
 </p>
+
+
+You can now start the amber server by evaluating from your project root directory:
+
+{% highlight sh %}
+amber serve .
+{% endhighlight %}
+
+Open [localhost:4000](http://localhost:4000). Helios will popup on startup.
+
+You are now ready to create your own Amber packages!
