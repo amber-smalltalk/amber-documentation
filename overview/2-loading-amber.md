@@ -100,12 +100,6 @@ Here is our final version of `index.html`.
 </html> 
 {% endhighlight %}
 
-
-<p class="warning">
-Most web browser will block popups by default. You may need to authorize the Helios popup.
-</p>
-
-
 You can now start the amber server by evaluating from your project root directory:
 
 {% highlight sh %}
@@ -113,5 +107,9 @@ amber serve .
 {% endhighlight %}
 
 Open [localhost:4000](http://localhost:4000). Helios will popup on startup.
+
+<p class="warning">
+Most web browser will block popups by default. You may need to authorize the Helios popup.
+</p>
 
 You are now ready to create your own Amber packages!
