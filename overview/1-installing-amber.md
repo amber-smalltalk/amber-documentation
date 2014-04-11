@@ -41,7 +41,13 @@ solves [the issue](https://github.com/Homebrew/homebrew/issues/22408#issuecommen
 
 #### Installing nodejs on Ubuntu
 
-Ubuntu provides nodejs as well as npm in its repository.
+Ubuntu provides nodejs as well as npm in its repository. A ppa provides a more up-to-date version though:
+
+{% highlight sh %}
+sudo apt-add-repository ppa:chris-lea/node.js
+sudo apt-get update
+{% endhighlight %}
+
 
 {% highlight sh %}
 sudo apt-get install nodejs npm
