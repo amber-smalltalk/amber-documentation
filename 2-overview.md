@@ -12,7 +12,7 @@ process and setup.
 
 Amber is shipped both as
 
-- a [npm module](https://npmjs.org/package/amber) for its command-line
+- a [npm module](https://npmjs.org/package/amber-cli) `amber-cli` for its command-line
   interface tools `amber` and `amberc` providing a small server, a compiler and a REPL;
 - a [bower](http://bower.io) component used as dependency for projects
   running in the browser.

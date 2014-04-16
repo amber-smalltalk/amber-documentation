@@ -7,7 +7,7 @@ next: "/overview/loading-packages.html"
 ---
 
 In this section we will learn how setup an `index.html` page to load
-nnamber using [requirejs](http://requirejs.org).
+amber using [requirejs](http://requirejs.org).
 
 #### Amber packages
 
@@ -17,6 +17,11 @@ dependencies to be loaded asynchronously.
 
 Amber ships with [requirejs](http://requirejs.org), the most popular
 AMD loader implementation.
+
+<p class="note">
+The following section explains how to manually create an <code>index.html</code> page that loads Amber. The <code>amber init</code> command provided by the npm package automates it. It is still advised to read this page in order to understand how Amber is loaded and how Amber packages work.
+</p>
+
 
 Create an `index.html` file with the following contents in the root folder of your project, next to the `bower_components` directory:
 

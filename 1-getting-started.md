@@ -15,77 +15,40 @@ The <a href="overview.html">Overview</a> gives more informations about
 the way Amber is shipped, how to install and load it.
 </p>
 
-To get Amber running, you will need [Bower](http://bower.io) and
+To get Amber running, you will need
 [Node.js](http://nodejs.org). Install the command-line tools with
 `npm` and Amber using bower:
 
 {% highlight sh %}
 # Install the CLI tools
-sudo npm install -g amber
+sudo npm install -g amber-cli
 
 # Create the project structure
 mkdir example-project
 cd example-project/
 
-# The project files will be stored in src/
-mkdir src
-
-# Install Amber as a dependency to our project
-bower install --save amber
+# Create and initialixe a new Amber project
+amber init
 {% endhighlight %}
 
-Create an `index.html` file loading Amber:
+You will be asked several questions about your new project during the `amber init` phase. Be sure to set a default namespace for your project.
 
-{% highlight html %}
-<!DOCTYPE html>
-<html>
-  <head>
-  
-    <script
-      type='text/javascript'
-      src='bower_components/amber/support/requirejs/require.min.js'>
-    </script>
-    <script
-      type='text/javascript'
-      src='bower_components/amber/support/amber.js'>
-    </script>
-    
-    <script type='text/javascript'>
-      require.config({
-        paths: {
-          'example-project': 'src', // mapping for our project files
-        }
-      });
+<p class="note">
+If you have been using older versions of Amber, you may have <code>amber</code> installed globally instead of <code>amber-cli</code>. You need to remove it first: <code>sudo npm uninstall -g amber</code>.
+</p>
 
-      // Load Amber
-      require(['amber/devel'], function (amber) {
+Your project directory now includes Amber as a dependency (using [Bower](http://bower.io), but you don't have to care about this for now), along with several other files, including the index file `index.html`.
 
-        // Initialize Amber
-        amber.initialize({
-          // Configure the default AMD namespace for new packages
-          "transport.defaultAmdNamespace": "example-project"
-        });
-
-        // Start the IDE
-        amber.popupHelios();
-      });
-    </script>
-  </head>
-  <body>
-  </body>
-</html> 
-{% endhighlight %}
-
-Start the standalone webserver:
+All you need to start working is to fire up the standalone amber webserver:
 
 {% highlight sh %}
-amber serve .
+amber serve
 {% endhighlight %}
 
 and open your web browser on
-[http://localhost:4000](http://localhost:4000). Helios -- Amber's IDE
--- will open as a popup window. From there new packages will be
-created with `mypackage` AMD namespace, and saved to the `src/`
+[http://localhost:4000](http://localhost:4000). A button on the page will
+open Helios -- the new IDE -- as a popup window. From there new packages will be
+created with AMD namespace set during the `amber init` phase, and saved to the `src/`
 folder.
 
 ![Helios](/images/helios.png)

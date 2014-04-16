@@ -63,17 +63,22 @@ node and npm using respective package managers.
 Once nodejs and npm are installed, evaluate:
 
 {% highlight sh %}
-npm install -g amber
+npm install -g amber-cli
 {% endhighlight %}
 
 Ubuntu users will have to evaluate it with `sudo`:
 
 {% highlight sh %}
-sudo npm install -g amber
+sudo npm install -g amber-cli
 {% endhighlight %}
 
 
 ### 2. The bower component
+
+<p class="note">
+The following section explains how to manually setup Amber using Bower. The <code>amber init</code> command provided by the npm package automates it. Unless you want to (a) understand how it works or (b) setup Amber differently, you can refer to the <a href="/getting-started.html">getting started</a> page.
+</p>
+
 
 The npm package doesn't provide the JavaScript files required to load
 Amber in a page. This is instead provided by the bower package.
