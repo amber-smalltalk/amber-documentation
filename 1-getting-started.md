@@ -8,6 +8,13 @@ next: "overview.html"
 Welcome to Amber! This super quick starting guide will get you up and
 running with Amber.
 
+[Sebastian Sastre](http://blog.flowingconcept.com/) made an
+introductory video of Amber which explains how to get a running Amber
+system.
+
+
+<iframe width="640" height="430" src="//www.youtube.com/embed/iPkas6P4GRQ" frameborder="0" allowfullscreen="true"> </iframe>
+
 ## Installing Amber
 
 <p class="note">
