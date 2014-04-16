@@ -52,3 +52,6 @@ created with AMD namespace set during the `amber init` phase, and saved to the `
 folder.
 
 ![Helios](/images/helios.png)
+
+<p class="warning"> Most web browser will block popups by default. You
+may need to authorize the Helios popup and reload the page.</p>
