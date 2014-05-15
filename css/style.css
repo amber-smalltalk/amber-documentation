@@ -68,6 +68,7 @@ body .container h3 {
 }
 body .container img {
   margin: 20px 0;
+  max-width: 700px;
 }
 body .container p.note {
   background: #FAFADD;
