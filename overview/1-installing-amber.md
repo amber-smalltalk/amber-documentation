@@ -20,7 +20,7 @@ JavaScript runtime used to run JavaScript code outside of the web
 browser.
 
 `nodejs` and `npm` can either be
-[downloadeded](http://nodejs.org/download) from the website, or
+[downloaded](http://nodejs.org/download) from the website, or
 installed using Operating System specific package managers.
 
 #### Installing nodejs on MacOS X and Windows
