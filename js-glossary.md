@@ -24,3 +24,11 @@ Grunt is build system for JS ecosystem. In root directory of the project, grunt 
 Amber itself and default Amber projects (the ones created by `amber init`) both contain `Gruntfile.js` and they include `grunt` and accompanying grunt task modules as development dependencies. In Amber project, grunt is used to recompile Smalltalk source to JavaScript files from CLI, as well as running the tests from CLI. In Amber itself, grunt is used for the same, plus a few bookkeeping tasks.
 
 
+### What is `node`?
+
+Node.js is a project running JavaScript (using Google's V8 engine) in a server environment. In addition to V8 engine itself, it includes libraries for writing servers in async-io manner. More and more server parts of the web applications are being written in Node.js as its really easy to write performant web server using it, and JavaScript is higher level language in comparision with langauages used to write server apps before.
+
+### Where is `node` used in Amber?
+
+Nearly everywhere, except the case of Amber itself or Amber project running in the browser. All the tools mentioned in this page run in `node` - they are server-side / cli tools written in JavaScript. Amber itself uses some CLI tooling (`amber-cli` package in `npm`) itself - `amber` command as a general tool and `amberc` as cli compiler. Those, too, are JavaScript, so they run in `node` (the former is Amber code compiled to JavaScript; the latter is native JavaScript). Amber also exports helper node libraries as `amber-dev` package in npm. And last but not least, you can compile Amber package(s) and bundle them into CLI executable for `node` - which is now `amber` tool itself is created.
+
