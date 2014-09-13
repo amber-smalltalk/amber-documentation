@@ -7,7 +7,7 @@ parent: Overview
 
 ### What is `bower`?
 
-Bower is dependency management tool for client-side web packages. Each packages can specifies its production dependencies and its development-only dependencies by name and semver version expression. Package dependencies are specified in `bower.json` file. Bower, when asked to install dependencies, looks for dependencies of the project and for dependencies of dependencies all way down, unifies version constraints and then installs all dependencies from all levels of the hierarchy in flat manner (side-by-side) into directory `bower_components`.
+Bower is dependency management tool for client-side web packages. Each package can specify its production dependencies and its development-only dependencies by name and semver version expression. Package dependencies are specified in `bower.json` file. Bower, when asked to install dependencies, looks for dependencies of the project and for dependencies of dependencies all way down, unifies version constraints and then installs all dependencies from all levels of the hierarchy in flat manner (side-by-side) into directory `bower_components`.
 
 ### Where is `bower` used in Amber?
 
@@ -31,4 +31,12 @@ Node.js is a project running JavaScript (using Google's V8 engine) in a server e
 ### Where is `node` used in Amber?
 
 Nearly everywhere, except the case of Amber itself or Amber project running in the browser. All the tools mentioned in this page run in `node` - they are server-side / cli tools written in JavaScript. Amber itself uses some CLI tooling (`amber-cli` package in `npm`) itself - `amber` command as a general tool and `amberc` as cli compiler. Those, too, are JavaScript, so they run in `node` (the former is Amber code compiled to JavaScript; the latter is native JavaScript). Amber also exports helper node libraries as `amber-dev` package in npm. And last but not least, you can compile Amber package(s) and bundle them into CLI executable for `node` - which is now `amber` tool itself is created.
+
+### What is `npm`?
+
+It stands for "node package manager" and it is a dependency management tool for server-side / cli JavaScript packages (that is, those to be run in `node`). Each package can specifiy its production dependencies and its development-only dependencies by name and semver version expression. Package dependencies are specified in `package.json` file. When asked to install dependencies, `npm` looks for dependencies of the project installs them into directory `node_modules`, while doing the same for the dependencies itself, the result being deep tree of dependencies - this way same module can appear many times (even hundreds of times), but always as a local dependency of its parent - this way, version clashes are avoided.
+
+### Where is `npm` used in Amber?
+
+First, `npm` is used to install all the tools mentioned here (except `node` and itself), and it is also used to install Amber CLI tool from `amber-cli` package. Second, Amber itself and Amber projects contains `package.json` which list the development dependencies needed for the supporting tooling to work (`grunt`, `amber-dev` and others). Third, `amber` itself is a `npm` package, for server-side projects that want to use it from `node`, not from browser.
 
