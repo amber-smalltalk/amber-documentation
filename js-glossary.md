@@ -23,6 +23,13 @@ Grunt is build system for JS ecosystem. In root directory of the project, grunt 
 
 Amber itself and default Amber projects (the ones created by `amber init`) both contain `Gruntfile.js` and they include `grunt` and accompanying grunt task modules as development dependencies. In Amber project, grunt is used to recompile Smalltalk source to JavaScript files from CLI, as well as running the tests from CLI. In Amber itself, grunt is used for the same, plus a few bookkeeping tasks.
 
+### What is `grunt-init`?
+
+Grunt-init is a create-project-from-a-template tool, spawned from `grunt` to be a standalone tool. It defines an API and the templates themselves are created as isolated `npm` packages, which `grunt-init` CLI command can use. In template modules, you define skeletion of the project as well as set of questions to ask when project is created and the way they are included in the skeletion. The result is, by running `grunt-init` with specific template, you answer a few questions, and a project is created for you base on the answers.
+
+### Where is `grunt-init` used in Amber?
+
+It is used internally as first part of `amber init`. It uses `grunt-init-amber` template.
 
 ### What is `node`?
 
