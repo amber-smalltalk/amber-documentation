@@ -17,7 +17,7 @@ An Amber web project (a client-side web project that uses Amber) is encouraged t
 
 ### What is `grunt`?
 
-Grunt is build system for the JavaScript ecosystem. In the root directory of the project, grunt looks for a file `Gruntfile.js`. This defines tasks to be done and binds them together, similarly to as a `Makefile` does for the `make` build system in UNIX. Grunt is installed via through the npm package manager and must be installed in three parts:
+Grunt is build system for the JavaScript ecosystem. In the root directory of the project, grunt looks for a file `Gruntfile.js`. This defines tasks to be done and binds them together, similarly to what `Makefile` does for the `make` build system in UNIX. Grunt is installed through the npm package manager and must be installed in three parts:
 - `grunt` - the runtime, installed as development dependency of the project, 
 - `grunt-xxx-yyy` - modules with reusable tasks, also as development dependency of the project, and
 - `grunt-cli`, the CLI command that drives the runtime using `Gruntfile.js`, which should be installed globally.
@@ -32,11 +32,11 @@ Grunt-init is a create-project-from-a-template tool, spawned from `grunt` to be 
 
 ### Where is `grunt-init` used in Amber?
 
-It is used internally as first part of `amber init`. It uses a `grunt-init-amber` template.
+It is used internally as first part of `amber init`. It uses the `grunt-init-amber` template.
 
 ### What is `node`?
 
-Node.js is a project running JavaScript (using Google's V8 engine) in a server environment. In addition to the V8 engine itself, it includes libraries for writing servers in async-io manner. More and more server parts of the web applications are being written in Node.js as it is straightforward to write performant web server using it, and JavaScript is a higher level language compared to langauages used to write server apps before.
+Node.js is a project running JavaScript (using Google's V8 engine) in a server environment. In addition to the V8 engine itself, it includes libraries for writing servers in async-io manner. More and more server parts of the web applications are being written in Node.js as it is straightforward to write performant web server using it, and JavaScript is a higher level language compared to languages used to write server apps before.
 
 ### Where is `node` used in Amber?
 
