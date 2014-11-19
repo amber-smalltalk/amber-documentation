@@ -2,7 +2,7 @@
 title: Overview
 layout: default
 permalink: "overview.html"
-next: "overview/installing.html"
+next: "overview/1-installing-amber.html"
 ---
 
 This guide will give you an overview of Amber, it's installation
