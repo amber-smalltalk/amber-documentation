@@ -17,7 +17,7 @@ An Amber web project (a client-side web project that uses Amber) is encouraged t
 
 ### What is `grunt`?
 
-Grunt is build system for the JavaScript ecosystem. In the root directory of the project, grunt looks for a file `Gruntfile.js`. This defines tasks to be done and binds them together, similarly to what `Makefile` does for the `make` build system in UNIX. Grunt is installed through the npm package manager and must be installed in three parts:
+Grunt is a build system for the JavaScript ecosystem. In the root directory of the project, grunt looks for a file called `Gruntfile.js`. This defines tasks to be done and binds them together, similarly to what a `Makefile` does for the `make` build system in UNIX. Grunt is installed through the npm package manager and must be installed in three parts:
 - `grunt` - the runtime, installed as development dependency of the project, 
 - `grunt-xxx-yyy` - modules with reusable tasks, also as development dependency of the project, and
 - `grunt-cli`, the CLI command that drives the runtime using `Gruntfile.js`, which should be installed globally.
@@ -28,7 +28,7 @@ Amber itself and default Amber projects (the ones created by `amber init`) both 
 
 ### What is `grunt-init`?
 
-Grunt-init is a create-project-from-a-template tool, spawned from `grunt` to be a standalone tool. It defines an API. The templates themselves are created as isolated `npm` packages, which the `grunt-init` CLI command can use. In template modules, you define the skeletion of the project, a set of questions to ask when the project is created and the way they are included in the skeletion. The result is, by running `grunt-init` with a specific template, you answer a few questions, and a project is created for you base on the answers.
+Grunt-init is a create-project-from-a-template tool, spawned from `grunt` to be a standalone tool. It defines an API. The templates themselves are created as isolated `npm` packages, which the `grunt-init` CLI command can use. In template modules, you define the skeleton of the project, a set of questions to ask when the project is created and the way they are included in the skeleton. The result is, by running `grunt-init` with a specific template, you answer a few questions, and a project is created for you base on the answers.
 
 ### Where is `grunt-init` used in Amber?
 
@@ -44,7 +44,7 @@ Nearly everywhere, except the case of Amber itself or an Amber project running i
 
 ### What is `npm`?
 
-It stands for "node package manager" and it is a dependency management tool for server-side / CLI JavaScript packages (that is, those to be run in `node`). Each package can specifiy its production dependencies and its development-only dependencies by name and semver version expression. Package dependencies are specified in `package.json` file. When asked to install dependencies, `npm` looks for dependencies of the project installs them into directory `node_modules`, while doing the same for the dependencies itself, the result being deep tree of dependencies - this way same module can appear many times (even hundreds of times), but always as a local dependency of its parent - this way, version clashes are avoided.
+It stands for "node package manager" and is a dependency management tool for server-side / CLI JavaScript packages (that is, those to be run in `node`). Each package can specify its production dependencies and its development-only dependencies by name and semver version expression. Package dependencies are specified in a `package.json` file. When asked to install dependencies, `npm` looks for dependencies of the project and installs them into the directory `node_modules`, while doing the same for the dependencies itself, the result being a deep tree of dependencies - this way the same module could appear several times (even hundreds of times), but always as a local dependency of its parent - this way, version clashes are avoided.
 
 ### Where is `npm` used in Amber?
 
