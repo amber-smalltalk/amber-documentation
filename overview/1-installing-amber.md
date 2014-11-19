@@ -39,20 +39,6 @@ When installed via homebrew, npm may have problems updating,
 running `npm -gf update` instead of traditional `npm -g update`
 solves [the issue](https://github.com/Homebrew/homebrew/issues/22408#issuecomment-30338806).
 
-#### Installing nodejs on Ubuntu
-
-Ubuntu provides nodejs as well as npm in its repository. A ppa provides a more up-to-date version though:
-
-{% highlight sh %}
-sudo apt-add-repository ppa:chris-lea/node.js
-sudo apt-get update
-{% endhighlight %}
-
-
-{% highlight sh %}
-sudo apt-get install nodejs
-{% endhighlight %}
-
 #### Installing nodejs on other operating system
 
 See node.js [instructions for installing](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
