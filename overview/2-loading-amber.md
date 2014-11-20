@@ -3,7 +3,7 @@ title: Loading Amber
 layout: default
 permalink: "loading-amber.html"
 parent: Overview
-next: "/overview/3-creating-packages.html"
+next: "creating-packages.html"
 ---
 
 In this section we will learn how setup an `index.html` page to load

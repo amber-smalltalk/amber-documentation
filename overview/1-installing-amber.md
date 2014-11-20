@@ -1,9 +1,9 @@
 ---
 title: Installing Amber
 layout: default
-permalink: "installing.html"
+permalink: "installing-amber.html"
 parent: Overview
-next: "/overview/loading-amber.html"
+next: "loading-amber.html"
 ---
 
 ### 1. The npm package
