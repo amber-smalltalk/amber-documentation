@@ -2,7 +2,7 @@
 title: Overview
 layout: default
 permalink: "overview.html"
-next: "overview/installing.html"
+next: "installing-amber.html"
 ---
 
 This guide will give you an overview of Amber, it's installation
@@ -17,7 +17,7 @@ Amber is shipped both as
 - a [bower](http://bower.io) component used as dependency for projects
   running in the browser.
 
-We will see in the [next section](overview/installing.html) how
+We will see in the [next section](installing-amber.html) how
 to install both components.
 
 ### How Amber manages files

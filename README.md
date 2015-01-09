@@ -1,9 +1,9 @@
 amber-documentation
 ===================
 
-Amber documentation website
+This is the repository of the [Amber documentation website](http://docs.amber-lang.net).
 
-This documentation site is generated using [Jekyll](http://jekyllrb.com/)
+The site is developed using [Jekyll](http://jekyllrb.com/).
 
 ## How to add a page to this amber-documentation site?
 
@@ -18,3 +18,5 @@ This documentation site is generated using [Jekyll](http://jekyllrb.com/)
 Thanks! Your contribution makes the world a better place to program!
 
 The Amber Team
+=======
+http://docs.amber-lang.net

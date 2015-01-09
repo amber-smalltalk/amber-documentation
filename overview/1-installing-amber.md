@@ -1,9 +1,9 @@
 ---
 title: Installing Amber
 layout: default
-permalink: "installing.html"
+permalink: "installing-amber.html"
 parent: Overview
-next: "/overview/loading-amber.html"
+next: "loading-amber.html"
 ---
 
 ### 1. The npm package
@@ -20,7 +20,7 @@ JavaScript runtime used to run JavaScript code outside of the web
 browser.
 
 `nodejs` and `npm` can either be
-[downloadeded](http://nodejs.org/download) from the website, or
+[downloaded](http://nodejs.org/download) from the website, or
 installed using Operating System specific package managers.
 
 #### Installing nodejs on MacOS X and Windows
@@ -38,20 +38,6 @@ brew install nodejs
 When installed via homebrew, npm may have problems updating,
 running `npm -gf update` instead of traditional `npm -g update`
 solves [the issue](https://github.com/Homebrew/homebrew/issues/22408#issuecomment-30338806).
-
-#### Installing nodejs on Ubuntu
-
-Ubuntu provides nodejs as well as npm in its repository. A ppa provides a more up-to-date version though:
-
-{% highlight sh %}
-sudo apt-add-repository ppa:chris-lea/node.js
-sudo apt-get update
-{% endhighlight %}
-
-
-{% highlight sh %}
-sudo apt-get install nodejs
-{% endhighlight %}
 
 #### Installing nodejs on other operating system
 

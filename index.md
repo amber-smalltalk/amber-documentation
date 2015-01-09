@@ -9,7 +9,7 @@ next: getting-started.html
 
 This is the Amber documentation website. The purpose of this documentation is to guide you step by step from learning <a href="/installing.html">how to install Amber</a> to being an advanced Amber developer.
 
-Currently we covered the firsts steps of <a href="/installing.html">installing</a> and <a href="/getting-started.html">getting started</a> with a new Amber project.
+Currently we covered the firsts steps of <a href="/installing-amber.html">installing</a> and <a href="/getting-started.html">getting started</a> with a new Amber project.
 
 <p class="note">
 This documentation and guides are a community effort. You figured out how to do something useful or cool? Great! Share it with us! <a href="https://github.com/amber-smalltalk/amber-documentation">Contribute</a> with your own guide here!
@@ -50,4 +50,4 @@ object.
 Evaluating JavaScript object methods is transparent and makes using
 libraries a breeze.
 
-<a href="/installing.html">Installing Amber</a>
+<a href="/installing-amber.html">Installing Amber</a>.

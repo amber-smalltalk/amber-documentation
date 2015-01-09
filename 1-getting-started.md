@@ -34,7 +34,7 @@ npm install -g amber-cli
 mkdir example-project
 cd example-project/
 
-# Create and initialixe a new Amber project
+# Create and initialize a new Amber project
 amber init
 {% endhighlight %}
 
