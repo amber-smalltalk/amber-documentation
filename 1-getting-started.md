@@ -28,7 +28,7 @@ To get Amber running, you will need
 
 {% highlight sh %}
 # Install the CLI tools
-sudo npm install -g amber-cli
+npm install -g amber-cli
 
 # Create the project structure
 mkdir example-project

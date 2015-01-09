@@ -5,20 +5,15 @@ hide: true
 next: getting-started.html
 ---
 
-<p class="warning">
-This documentation is a work in progress. 
-</p>
+### Welcome 
 
-Welcome to the Amber documentation website!
+This is the Amber documentation website. The purpose of this documentation is to guide you step by step from learning <a href="/installing.html">how to install Amber</a> to being an advanced Amber developer.
+
+Currently we covered the firsts steps of <a href="/installing-amber.html">installing</a> and <a href="/getting-started.html">getting started</a> with a new Amber project.
 
 <p class="note">
-This documentation and guides are a community effort, you can
-<a href="https://github.com/amber-smalltalk/amber-documentation">contribute</a> your
-own guide!
+This documentation and guides are a community effort. You figured out how to do something useful or cool? Great! Share it with us! <a href="https://github.com/amber-smalltalk/amber-documentation">Contribute</a> with your own guide here!
 </p>
-
-The purpose of this documentation is to guide you step by step from
-learning how to install Amber to being an advanced Amber developer.
 
 ### What is Amber?
 
@@ -39,7 +34,7 @@ debugger.
 clarity, conciseness, and human-friendliness.
 
 - As a language, it is immensely clean and mature, both syntactically
-and semantically. It is a pure OO language, with objects all the way
+and semantically. It is a pure Object Oriented language, with objects all the way
 down.
 
 - Also, having a true live & incremental development environment where
@@ -54,3 +49,5 @@ object.
 
 Evaluating JavaScript object methods is transparent and makes using
 libraries a breeze.
+
+<a href="/installing-amber.html">Installing Amber</a>.
