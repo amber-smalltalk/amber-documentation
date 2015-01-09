@@ -19,7 +19,7 @@ amber serve
 
 And visit `http://localhost:4000`
 
-Here is also an terminal screencast doing just that:
+Here is also a terminal screencast doing just that:
 
 <iframe src="http://showterm.io/457dc8b24df38d67e421d#fast" width="640" height="480"></iframe>
 
