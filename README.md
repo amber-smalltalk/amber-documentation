@@ -1,6 +1,8 @@
 amber-documentation
 ===================
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/amber-smalltalk/amber-documentation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is the repository of the [Amber documentation website](http://docs.amber-lang.net).
 
 The site is developed using [Jekyll](http://jekyllrb.com/).
