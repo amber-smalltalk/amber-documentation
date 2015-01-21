@@ -21,12 +21,6 @@ In case the above did not work, evaluate the following in the JavaScript console
 2.    Go to Workspace tab.
 3.    Print-it ``Smalltalk version``.
 
-As an alternative evaluate
-
-      Smalltalk version
-      
-in a workspace
-
 ### More questions and answers 
 
 On the wiki
