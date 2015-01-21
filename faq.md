@@ -19,6 +19,7 @@ A: Evaluate the following in the JavaScript console:
 3.    Click at class ``SmalltalkImage`` method ``version``
 
 ### More questions and answers 
-    
-    on https://github.com/amber-smalltalk/amber/wiki/FAQ
+
+On the wiki
+https://github.com/amber-smalltalk/amber/wiki/FAQ
 
