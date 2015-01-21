@@ -7,16 +7,19 @@ parent: Overview
 
 ### Q: How do I get back the Helios IDE after I have closed it
 
-A: Evaluate the following in the JavaScript console:
+Press this sequence of keys: Shift, Shift, Ctrl, Shift.
+A dialog should appear with "Legacy IDE" and "Helios IDE" buttons. 
+
+In case the above did not work, evaluate the following in the JavaScript console:
 
     require('amber/helpers').popupHelios()
 
     
 ### Q: What version is the amber website running?
 
-1.    Open IDE at http://amber-lang.net/
-2.    Navigate to packages Kernel-Infrastructure
-3.    Click at class ``SmalltalkImage`` method ``version``
+1.    Open IDE at http://amber-lang.net/.
+2.    Go to Workspace tab.
+3.    Print-it ``Smalltalk version``.
 
 As an alternative evaluate
 
