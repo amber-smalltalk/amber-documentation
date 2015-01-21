@@ -18,6 +18,12 @@ A: Evaluate the following in the JavaScript console:
 2.    Navigate to packages Kernel-Infrastructure
 3.    Click at class ``SmalltalkImage`` method ``version``
 
+As an alternative evaluate
+
+      Smalltalk version
+      
+in a workspace
+
 ### More questions and answers 
 
 On the wiki
