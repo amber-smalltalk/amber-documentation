@@ -20,5 +20,5 @@ A: Evaluate the following in the JavaScript console:
 
 ### More questions and answers 
     
-    on the [wiki](https://github.com/amber-smalltalk/amber/wiki/FAQ)
+    on the https://github.com/amber-smalltalk/amber/wiki/FAQ
 
