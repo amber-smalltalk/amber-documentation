@@ -44,6 +44,28 @@ Use `npm info amber-cli` to find out which version is latest and which one is bl
 -  ``npm update amber-dev`` in every project dir will fix it for current projects
 
 
+### How do I get the text value of an input field?
+
+Assuming I have a field with an id of #field1, how do I get the text value of it?
+
+Answer:
+
+   '#field1' asJQuery val
+
+Note:
+
+All Javascript methods in jQuery are available to you this way.
+
+Multi parameter functions are then mapped like:
+
+    aQuery.sampleFunc (a,b,c);
+
+    aQuery sampleFunc: a and: b and: c.
+
+The ``and:`` can be whatever. The only thing that matters is the first part of the keyword selector which has to match the function name.
+
+
+
 ### More questions and answers 
 
 On the wiki
