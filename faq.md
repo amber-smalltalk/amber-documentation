@@ -17,7 +17,7 @@ amber init
 amber serve
 {% endhighlight %}
 
-And visit `http://localhost:4000`
+And visit [http://localhost:4000](http://localhost:4000)
 
 Here is also a terminal screencast doing just that:
 
@@ -31,17 +31,17 @@ A dialog should appear with "Legacy IDE" and "Helios IDE" buttons.
 
 In case the above did not work, evaluate the following in the JavaScript console:
 
-    require('amber/helpers').popupHelios()
+    `require('amber/helpers').popupHelios()`
 
     
-### Q: What version is the amber website running?
+#### Q: What version is the amber website running?
 
-1.    Open IDE at http://amber-lang.net/.
+1.    Open IDE at [http://amber-lang.net/](http://amber-lang.net/).
 2.    Go to Workspace tab.
 3.    Print-it ``Smalltalk version``.
 4.    
 
-### How do I install the latest Amber version?
+#### How do I install the latest Amber version?
 
 'Latest' often means the 'latest stable'. If this is the case go for
 
@@ -56,14 +56,14 @@ should install the last prerelease (but not the stable version even if it is new
 Use `npm info amber-cli` to find out which version is latest and which one is bleedingedge, if you are unsure.
 
 
-### How do I update Amber?
+#### How do I update Amber?
 
 -  ``npm install -g amber-cli``  will get it fixed for all new projects and 
 
 -  ``npm update amber-dev`` in every project dir will fix it for current projects
 
 
-### How do I get the text value of an input field?
+#### How do I get the text value of an input field?
 
 Assuming I have a field with an id of #field1, how do I get the text value of it?
 
@@ -85,8 +85,8 @@ The ``and:`` can be whatever. The only thing that matters is the first part of t
 
 
 
-### More questions and answers 
+#### More questions and answers 
 
-On the wiki
-https://github.com/amber-smalltalk/amber/wiki/FAQ
+On the [wiki](https://github.com/amber-smalltalk/amber/wiki/FAQ)
+
 
