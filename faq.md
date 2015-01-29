@@ -40,18 +40,18 @@ In case the above did not work, evaluate the following in the JavaScript console
 
 #### How do I install the latest Amber version?
 
-'Latest' often means the 'latest stable'. If this is the case go for
+For the **latest stable**, go for
 
 `npm -g install amber-cli`
 
-If you mean really the prereleases, 
+If you want the **latest prerelease**, go for
 
 `npm -g install amber-cli@bleedingedge`
 
-should install the last prerelease (but not the stable version even if it is newer).
+Note that beleedingedge will *not* install the stable version even if it is newer.
 
 If you want to be sure which version is latest and which one is bleedingedge use:
-`npm info amber-cli`
+`npm info amber-cli` and you will find them in the `dist-tags` section.
 
 #### How do I update Amber?
 
@@ -66,26 +66,21 @@ If you want to be sure which version is latest and which one is bleedingedge use
 
 Assuming I have a field with an id of #field1, how do I get the text value of it?
 
-Answer:
+Answer: `'#field1' asJQuery val`
 
-   '#field1' asJQuery val
-
-Note:
-
-All Javascript methods in jQuery are available to you this way.
+Note: _All_ JavaScript methods in jQuery are available to you this way.
 
 Multi parameter functions are then mapped like:
 
-    aQuery.sampleFunc (a,b,c);
+`aQuery.sampleFunc(a,b,c);`
 
-    aQuery sampleFunc: a and: b and: c.
+ `aQuery sampleFunc: a andThis: b andThat: c.`
 
-The ``and:`` can be whatever. The only thing that matters is the first part of the keyword selector which has to match the function name.
+The ``andThis:andThat:`` part can be any selectors. The only thing that matters for JavaScript and Amber is the first part of the keyword selector which has to match the JavaScript function name.
 
 
+#### Where can I found more questions and answers?
 
-#### More questions and answers 
-
-On the [wiki](https://github.com/amber-smalltalk/amber/wiki/FAQ)
+You can try the [wiki](https://github.com/amber-smalltalk/amber/wiki/FAQ) or join the Amber's chat group [here](https://gitter.im/amber-smalltalk/amber).
 
 
