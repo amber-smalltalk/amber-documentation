@@ -48,7 +48,7 @@ If you want the **latest prerelease**, go for
 
 `npm -g install amber-cli@bleedingedge`
 
-Note that beleedingedge will *not* install the stable version even if it is newer.
+Note that bleedingedge will *not* install the stable version even if it is newer.
 
 If you want to be sure which version is latest and which one is bleedingedge use:
 `npm info amber-cli` and you will find them in the `dist-tags` section.
