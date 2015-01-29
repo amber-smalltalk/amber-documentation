@@ -37,28 +37,29 @@ In case the above did not work, evaluate the following in the JavaScript console
 1.    Open IDE at [http://amber-lang.net/](http://amber-lang.net/).
 2.    Go to Workspace tab.
 3.    Print-it ``Smalltalk version``.
-4.    
 
 #### How do I install the latest Amber version?
 
 'Latest' often means the 'latest stable'. If this is the case go for
 
-      npm -g install amber-cli
+`npm -g install amber-cli`
 
 If you mean really the prereleases, 
 
-      npm -g install amber-cli@bleedingedge 
+`npm -g install amber-cli@bleedingedge`
 
 should install the last prerelease (but not the stable version even if it is newer).
 
-Use `npm info amber-cli` to find out which version is latest and which one is bleedingedge, if you are unsure.
-
+If you want to be sure which version is latest and which one is bleedingedge use:
+`npm info amber-cli`
 
 #### How do I update Amber?
 
--  ``npm install -g amber-cli``  will get it fixed for all new projects and 
+1. ``npm install -g amber-cli``  will get it fixed for all new projects and 
 
--  ``npm update amber-dev`` in every project dir will fix it for current projects
+2.  ``npm update amber-dev`` in every project dir will fix it for current projects
+
+3. `bower install` in every project dir will fix it for current projects
 
 
 #### How do I get the text value of an input field?
