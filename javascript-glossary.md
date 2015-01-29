@@ -1,7 +1,7 @@
 ---
-title: JS ecosystem glossary
+title: JavaScript ecosystem glossary
 layout: default
-permalink: "js-glossary.html"
+permalink: "javascript-glossary.html"
 parent: Overview
 ---
 

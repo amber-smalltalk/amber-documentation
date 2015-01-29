@@ -10,10 +10,11 @@ The site is developed using [Jekyll](http://jekyllrb.com/).
 ## How to add a page to this amber-documentation site?
 
 1. Meet requirements. You need Jekyll in your system: `gem install jekyll`.
-2. Clone this repo with `git clone git@github.com:amber-smalltalk/amber-documentation.git`.
-3. `git checkout -b my-edit-or-new-doc-page`
-4. Run Jekyll with `jekyll serve` (it will rebuild the site after any file gets saved).
-5. Visit `http://localhost:4000` to see the current state.
+2. Fork github.com:amber-smalltalk/amber-documentation.git
+2. Clone your forked repo with `git clone git@github.com:yourgithubusername/amber-documentation.git`.
+3. `git checkout -b my-edit-or-contribution`
+4. Run Jekyll with `jekyll serve` (it will detect and rebuild the site after any file gets saved).
+5. Visit `http://localhost:4000` to see the current state of the documentation.
 6. Edit until you are satisfied.
 7. Commit, push and open a pull request
 

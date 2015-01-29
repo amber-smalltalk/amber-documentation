@@ -5,9 +5,9 @@ permalink: "faq.html"
 parent: Overview
 ---
 
-#### Q: How do I start a new Amber project?
+#### How do I start a new Amber project?
 
-A: You can see the steps [described here](/getting-started.html) which are basically:
+You can see the steps [described here](/getting-started.html) which are basically:
 
 1. `npm install -g amber-cli`
 2. `mkdir newProjectDir`
@@ -22,7 +22,7 @@ Here is also a terminal screencast doing just that:
 <iframe src="http://showterm.io/457dc8b24df38d67e421d#fast" width="640" height="480"></iframe>
 
 
-#### Q: How do I get back the Helios IDE after I have closed it?
+#### How do I get back the Helios IDE after I have closed it?
 
 Press this sequence of keys: Shift, Shift, Ctrl, Shift.
 A dialog should appear with "Legacy IDE" and "Helios IDE" buttons. 
@@ -32,7 +32,7 @@ In case the above did not work, evaluate the following in the JavaScript console
 `require('amber/helpers').popupHelios()`
 
     
-#### Q: What version is the amber website running?
+#### What version is the Amber website running?
 
 1.    Open IDE at [http://amber-lang.net/](http://amber-lang.net/).
 2.    Go to the Workspace tab.
@@ -64,20 +64,28 @@ If you want to be sure which version is latest and which one is bleedingedge use
 
 #### How do I get the text value of an input field?
 
-If you have a field with an id of #field1, the way to get it's value is `'#field1' asJQuery val`.
+If you have `<input id="field1" ...`, the way to get its value is `'#field1' asJQuery val`.
 
-Note: _All_ JavaScript methods in jQuery are available to you this way.
+#### How can I 'call' JavaScript functions from my Amber code? 
 
-Multi parameter functions are then mapped like:
+To allow you to use JavaScript from your Amber code, Amber uses a proxy that will route Smalltalk messages as JavaScript calls as transparent as possible. For example, _all_ JavaScript methods in jQuery are available to you this way:
 
-`aQuery.sampleFunc(a,b,c);`
+**Without arguments**: 
 
- `aQuery sampleFunc: a andThis: b andThat: c.`
+`'#element-id' asJQuery hide`
+`'#element-id' asJQuery show`
 
-The ``andThis:andThat:`` part can be any selectors. The only thing that matters for JavaScript and Amber is the first part of the keyword selector which has to match the JavaScript function name.
+**With one argument**: 
 
+`'#element-id' asJQuery attr: 'data' put: 'some-value'`
 
-#### Where can I found more questions and answers?
+**With many arguments**:
+
+`aQuery.sampleFunc(a,b,c);` translates to `aQuery sampleFunc: a andThis: b andThat: c.`
+
+In the previous examples, the `put:` and the ``andThis:andThat:`` part of the Smalltalk selector can be named any way you want. For JavaScript functions the names in that part of the keyword are ignored. Amber  needs only the first part of the selector matching the JavaScript function name.
+
+#### Where can I find more questions and answers?
 
 You can try the [wiki](https://github.com/amber-smalltalk/amber/wiki/FAQ) or join the Amber's chat group [here](https://gitter.im/amber-smalltalk/amber).
 
