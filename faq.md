@@ -64,9 +64,7 @@ If you want to be sure which version is latest and which one is bleedingedge use
 
 #### How do I get the text value of an input field?
 
-Assuming I have a field with an id of #field1, how do I get the text value of it?
-
-Answer: `'#field1' asJQuery val`
+If you have a field with an id of #field1, the way to get it's value is `'#field1' asJQuery val`.
 
 Note: _All_ JavaScript methods in jQuery are available to you this way.
 
