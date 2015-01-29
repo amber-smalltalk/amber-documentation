@@ -29,14 +29,14 @@ A dialog should appear with "Legacy IDE" and "Helios IDE" buttons.
 
 In case the above did not work, evaluate the following in the JavaScript console:
 
-    `require('amber/helpers').popupHelios()`
+`require('amber/helpers').popupHelios()`
 
     
 #### Q: What version is the amber website running?
 
 1.    Open IDE at [http://amber-lang.net/](http://amber-lang.net/).
-2.    Go to Workspace tab.
-3.    Print-it ``Smalltalk version``.
+2.    Go to the Workspace tab.
+3.    Print or inspect the expression ``Smalltalk version``.
 
 #### How do I install the latest Amber version?
 
