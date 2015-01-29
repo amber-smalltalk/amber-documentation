@@ -9,13 +9,11 @@ parent: Overview
 
 A: You can see the steps [described here](/getting-started.html) which are basically:
 
-{% highlight sh %}
-npm install -g amber-cli
-mkdir newProjectDir
-cd newProjectDir
-amber init
-amber serve
-{% endhighlight %}
+1. `npm install -g amber-cli`
+2. `mkdir newProjectDir`
+3. `cd newProjectDir`
+4. `amber init`
+5. `amber serve`
 
 And visit [http://localhost:4000](http://localhost:4000)
 
