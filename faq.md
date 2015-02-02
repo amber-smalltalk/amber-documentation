@@ -64,7 +64,8 @@ If you want to be sure which version is latest and which one is bleedingedge use
 
 #### What does the caret ^ do in front of a versionnumber?
 
-A caret in front of a version number in ``bower.json`` as for example  ``^0.14.1``  means that if you run ``bower install`` the latest compatible version will be pulled in. The ``bower.json`` is still the same after install, by design, as things like "^0.14.1" just _describe_ what versions of the dependency are required. But actually installed ``bower_components/amber`` contains the more recent version number as can be examined in ``bower_components/amber/,bower.json`` showing the resolved version (or just by running the IDE and printing `Smalltalk version` in Workspace).
+``^0.14.1`` is a shortcut for ``>=0.14.1 <0.15.0``. 
+Contrary to a common misconception, package.json / bower.json do not show the version that is installed, but on the contrary they describe what interval of versions is required for installation.
 
 
 #### How do I get the text value of an input field?
