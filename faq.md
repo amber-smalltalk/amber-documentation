@@ -65,7 +65,7 @@ If you want to be sure which version is latest and which one is bleedingedge use
 #### What does the caret ^ do in front of a versionnumber?
 
 ``^0.14.1`` is a shortcut for ``>=0.14.1 <0.15.0``. 
-Contrary to a common misconception, package.json / bower.json do not show the version that is installed, but on the contrary they describe what interval of versions is required for installation.
+Contrary to a common misconception, package.json / bower.json do not show the version that is installed, but instead they describe what interval of versions is required for installation itself.
 
 
 #### How do I get the text value of an input field?
