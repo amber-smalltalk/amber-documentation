@@ -57,7 +57,7 @@ If you want to be sure which version is latest and which one is bleedingedge use
 
 1. ``npm install -g amber-cli``  will get it fixed for all new projects and 
 
-2.  ``npm update amber-dev`` in every project dir will fix it for current projects
+2.  ``npm update`` in every project dir will fix it for current projects
 
 3. `bower install` in every project dir will fix it for current projects
 
