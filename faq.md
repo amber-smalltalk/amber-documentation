@@ -62,6 +62,11 @@ If you want to be sure which version is latest and which one is bleedingedge use
 3. `bower install` in every project dir will fix it for current projects
 
 
+#### What does the caret ^ do in front of a versionnumber?
+
+A caret in front of a version number in ``bower.json`` as for example  ``^0.14.1``  means that if you run ``bower install`` the latest compatible version will be pulled in. The ``bower.json`` is still the same after install, by design, as things like "^0.14.1" just _describe_ what versions of the dependency are required. But actually installed ``bower_components/amber`` contains the more recent version number as can be examined in ``bower_components/amber/,bower.json`` showing the resolved version (or just by running the IDE and printing `Smalltalk version` in Workspace).
+
+
 #### How do I get the text value of an input field?
 
 If you have `<input id="field1" ...`, the way to get its value is `'#field1' asJQuery val`.
