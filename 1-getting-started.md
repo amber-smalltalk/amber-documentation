@@ -8,7 +8,7 @@ next: "overview.html"
 Welcome to Amber! This super quick starting guide will get you up and
 running with Amber.
 
-For latest instructions consult the [README.md]([https://github.com/amber-smalltalk/amber/blob/master/README.md) on [github](https://github.com/amber-smalltalk/amber).
+For latest instructions consult the [README.md](https://github.com/amber-smalltalk/amber/blob/master/README.md) on [github](https://github.com/amber-smalltalk/amber).
 
 
 [Sebastian Sastre](http://blog.flowingconcept.com/) made an
