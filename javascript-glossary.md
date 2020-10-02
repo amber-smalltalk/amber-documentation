@@ -41,7 +41,7 @@ It is used internally as first part of `amber init`. It uses the `grunt-init-amb
 
 ### What is `node`?
 
-Node.js is a project running JavaScript (using Google's V8 engine) in a server environment. In addition to the V8 engine itself, it includes libraries for writing servers in async-io manner. More and more server parts of the web applications are being written in Node.js as it is straightforward to write performant web server using it, and JavaScript is a higher level language compared to languages used to write server apps before.
+Node.js is a project running JavaScript (using Google's V8 engine) in a server environment.This allows for complex transforms,such as shortening multicharacter variable names or using a shorter syntex   In addition to the V8 engine itself, it includes libraries for writing servers in async-io manner. More and more server parts of the web applications are being written in Node.js as it is straightforward to write performant web server using it, and JavaScript is a higher level language compared to languages used to write server apps before.
 
 ### Where is `node` used in Amber?
 
